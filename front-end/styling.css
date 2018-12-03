@@ -1,0 +1,152 @@
+.column {
+  float: left;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  margin-bottom: 0;
+}
+
+img {
+width: 100%;
+height: 300px;
+}
+
+#body {
+   padding:10px;
+   padding-bottom:11%;   /* Height of the footer */
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+	height: 100%;
+    background-color: #e17845;
+	border: 1px solid black;
+	float: left;
+}
+
+li a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+	color: white;
+	border: 1px solid black;
+	font-weight:bold;
+	font-size:24px;
+	line-height: 150%;
+}
+
+li a:hover:not(.active) {
+    background-color: #6fa8dc;
+}
+
+input[type=text] {
+	width: 50%;
+	padding: 1%;
+	margin: 2% 5%;
+	box-sizing: border-box;
+	font-size: 200%;
+	border-style: solid;
+	border-color: black;
+	border-width: 0.3vh;
+	display: inline-block;
+
+}
+
+label {
+	width: 50%;
+	margin: 0 5%;
+	box-sizing: border-box;
+	font-size: 200%;
+	font-weight:bold;
+	display: inline-block;
+}
+
+input[type=number], select {
+	width: 9%;
+	padding: 2%;
+	box-sizing: border-box;
+	font-size: 100%;
+	border-style: solid;
+	border-color: black;
+	border-width: 0.3vh;
+	display: inline-block;
+}
+
+input[type=submit] {
+	width: 30%;
+	padding: 1%;
+	margin: 2% 35%;
+	box-sizing: border-box;
+	font-size: 200%;
+	border-style: solid;
+	border-color: black;
+	border-width: 0.3vh;
+	background-color: #e17845;
+	color: white;
+	font-weight:bold;
+	cursor: pointer;
+}
+
+input[type=month] {
+	width: 23%;
+	padding: 0.8%;
+	box-sizing: border-box;
+	font-size: 200%;
+	border-style: solid;
+	border-color: black;
+	border-width: 0.3vh;
+}
+
+input[type=radio] {
+	margin-bottom: 2%;
+	-ms-transform: scale(2); /* IE */
+	-moz-transform: scale(2); /* FF */
+	-webkit-transform: scale(2); /* Safari and Chrome */
+	-o-transform: scale(2); /* Opera */
+	margin-left:7%;
+}
+
+.radiotext
+{
+  /* Checkbox text */
+  font-size: 130%;
+  display: inline;
+  font-weight:bold;
+}
+
+.container {
+	margin-top: 1%;
+}
+.vertical {
+  width: 40%;
+  -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+  transform: rotate(90deg);
+  margin-top:20%;
+}
+.vertical {
+  box-shadow: inset 0px 4px 6px #ccc;
+}
+.progress-bar {
+  box-shadow: inset 0px 4px 6px rgba(100,100,100,0.6);
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+	height: 10%;
+    background-color: #e17845;
+    color: white;
+}
+
+.footer_links {
+	font-weight:bold;
+	font-size:20px;
+}

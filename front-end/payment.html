@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<title>Payment / Address Confirmation</title>
+	<link rel="stylesheet" type="text/css" href="styling.css">
+</head>
+<body>
+<div class="row" style= "margin-bottom: 3%">
+  <div class="column" style="width: 20%;">
+	<img src="Antonios_logo.PNG" alt="logo">
+  </div>
+  <div class="column" style="width: 80%;">
+	<img src="Cover.jpg" alt="cover">
+  </div>
+</div>
+
+
+<div id="body">
+	<ul>
+	  <li><a href="#Menu">Food Menu <img align= "right" src="menu_icon.png" style="width: 35px; height: 35px"/></a></li>
+	  <li><a href="#Cart">Shopping Cart <img align= "right" src="cart_icon.png" style="width: 35px; height: 35px"/></a></li>
+	  <li><a href="#Profile">Profile <img align= "right" src="profile_icon.jpg" style="width: 35px; height: 35px"/></a></li>
+	  <li><a href="#History">Order History <img align= "right" src="order_history_icon.png" style="width: 35px; height: 35px"/></a></li>
+	  <li><a href="#Logout">Logout <img align= "right" src="logout_icon.png" style="width: 35px; height: 35px"/></a></li>
+	</ul>
+
+	<form name= "myForm" action="payment.html">
+		<label style= "padding-bottom:2%">Confirm / Update Delivery Address:</label>
+		<div style= "float:left; width:30%; margin-left:5%">
+		<label for= "address" style="font-size: 120%; margin-top: 3%; margin:0 0%">Street Address:</label>
+		</div>
+		<div style= "float:left; width:10%; margin-left:1%">
+		<label for= "apart" style="font-size: 120%; margin-top: 3%; margin:0 0">Apartment:</label>
+		</div>
+		<div style= "float:left; width:10%;">
+		<label for= "buzzer" style="font-size: 120%; margin-top: 3%; margin:0 0">Buzzer:</label>
+		</div>
+		<input type="text" id="address" name="address" placeholder="99 fifth ave" style="width:30%; margin: 0 0; margin-left: 5%">
+		<input type="text" id="apart" name="apart" placeholder="1905" style="width:10%; margin: 0 0;">
+		<input type="text" id="buzzer" name="buzzer" placeholder="220122" style="width:10%; margin: 0 0">
+		
+		<div style= "float:left; width:20%; margin-left:5%">
+		<label for= "city" style="font-size: 120%; margin-top: 3%; margin:2% 0%">City:</label>
+		</div>
+		<div style= "float:left; width:20%; margin-left:1%">
+		<label for= "province" style="font-size: 120%; margin-top: 3%; margin:2% 0">Province:</label>
+		</div>
+		<div style= "float:left; width:25%;">
+		<label for= "phone" style="font-size: 120%; margin-top: 3%; margin:2% 0">Phone #:</label>
+		</div>
+		<div style="margin-bottom:2%">
+		</div>
+		<input type="text" id="city" name="city" placeholder="Ottawa" style="width:23%; margin:0 0; margin-left: 5%">
+		<input type="text" id="province" name="province" placeholder="ON" style="width:7%; margin: 0 0;">
+		<input type="text" id="phone" name="phone" placeholder="613-222-2222" style="width:20%; margin: 0 0">
+		
+		<label style= "margin: 2% 25% 2% 25%">Payment Information:</label>
+		<input type="radio" name="cc" value="VISA" style= "margin-left:26%;"> <span class="radiotext">VISA</span>
+		<input type="radio" name="cc" value="MASTERCARD"> <span class="radiotext">MASTERCARD</span>
+		<br>
+		<div style= "float:left; width:30%; margin-left:25%">
+		<label for= "name" style="font-size: 120%; margin-top: 3%; margin:0 0">Cardholder's Name:</label>
+		</div>
+		<div style= "float:left; width:20%; margin-left:11%">
+		<label for= "cvv" style="font-size: 120%; margin-top: 3%; margin:0 0">CVV (3 digits):</label>
+		</div>
+		<input type="text" id="name" name="address" placeholder="Name as shown on card..." style="width:40%; margin: 0 0; margin-left: 25%">
+		<input type="text" id="cvv" name="cvv" placeholder="CVV#" style="width:10%; margin: 0 0;">
+		
+		<div style= "float:left; width:20%; margin-left:25%">
+		<label for= "cardnum" style="font-size: 120%; margin-top: 3%; margin:2% 0%">Card Number:</label>
+		</div>
+		<div style= "float:left; width:20%; margin-left:8%">
+		<label for= "expiry" style="font-size: 120%; margin-top: 3%; margin:2% 0%">Expiry Date:</label>
+		</div>
+		<input type="text" id="cardnum" name="cardnum" placeholder="Card number..." style="width: 27%; margin: 0 0; margin-left: 25%">
+		<input type="month" id="expiry" name="expiry" style="margin: 0 0;">
+		
+		<input type="submit" value="PLACE ORDER">
+	</form>
+</div>
+
+<div class="footer">
+  <a class="footer_links" href="#About" style="float: left; margin-left: 2%;">About Us</a>
+  <a class="footer_links" href="#Guarantee" style="float: right; margin-right: 2%;">Our Guarantee</a>
+  <div style="text-align: center;"><a class="footer_links" href="#Contact">Contact Us</a></div>
+  <p class="footer_links" style="text-align: center;">Copyright © Antonio's Pizzeria 2018</p>
+</div>
+</body>
+</html>
