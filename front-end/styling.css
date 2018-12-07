@@ -125,15 +125,26 @@ input[type=radio] {
 }
 .vertical {
   width: 40%;
-  -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+  /*-webkit-transform: rotate(90deg);
   transform: rotate(90deg);
-  margin-top:20%;
+  margin-top:20%; */
 }
 .vertical {
   box-shadow: inset 0px 4px 6px #ccc;
 }
 .progress-bar {
   box-shadow: inset 0px 4px 6px rgba(100,100,100,0.6);
+}
+
+.timer {
+  text-align: center;
+  font-weight:bold;
+  font-size:500%;
+  background-color: #e17845;
+  color:white;
+  display:inline-block;
+  margin-left: 40%;
+
 }
 
 .footer {
