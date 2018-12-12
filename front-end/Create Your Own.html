@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.column {
+  float: left;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  margin-bottom: 35px;
+}
+
+img {
+width: 100%;
+height: 300px;
+}
+
+#body {
+   padding:10px;
+   padding-bottom:60px;   /* Height of the footer */
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    background-color: #e17845;
+	border: 1px solid black;
+	float: left;
+}
+
+li a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+	color: white;
+	border: 1px solid black;
+	font-weight:bold;
+	font-size:24px;
+	line-height: 150%;
+}
+
+li a:hover:not(.active) {
+    background-color: #6fa8dc;
+}
+
+input[type=text], select {
+	width: 50%;
+	padding: 2%;
+	margin: 2% 5%;
+	box-sizing: border-box;
+	font-size: 100%;
+	border-style: solid;
+	border-color: grey;
+	border-width: 0.1vh;
+}
+
+label {
+	width: 50%;
+	margin: 0 5%;
+	box-sizing: border-box;
+	font-size: 150%;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+	height: 10%;
+    background-color: #e17845;
+    color: white;
+}
+
+.footer_links {
+	font-weight:bold;
+	font-size:20px;
+}
+</style>
+</head>
+<body>
+<div class="row">
+  <div class="column" style="width: 20%;">
+	<img src="Antonios_logo.PNG" alt="logo">
+  </div>
+  <div class="column" style="width: 80%;">
+	<img src="Cover.jpg" alt="cover">
+  </div>
+</div>
+
+
+<div id="body">
+	<ul>
+	  <li><a href="#Menu">Food Menu <img align= "right" src="menu_icon.png" style="width: 35px; height: 35px"/></a></li>
+	  <li><a href="#Cart">Shopping Cart <img align= "right" src="cart_icon.png" style="width: 35px; height: 35px"/></a></li>
+	  <li><a href="#Profile">Profile <img align= "right" src="profile_icon.jpg" style="width: 35px; height: 35px"/></a></li>
+	  <li><a href="#History">Order History <img align= "right" src="order_history_icon.png" style="width: 35px; height: 35px"/></a></li>
+	  <li><a href="#Logout">Logout <img align= "right" src="logout_icon.png" style="width: 35px; height: 35px"/></a></li>
+	</ul>
+
+	</ul>
+<form action="javascript:addContactHandleIt()" name="myForm">
+<table style="margin-left: auto; margin-right: auto; height: 142px;" width="225">
+<tbody>
+<tr>
+<<table style="height: 141px;" width="346">
+<tbody>
+<tr style="height: 39px;">
+<td style="width: 344.8px; height: 39px;" colspan="2">&nbsp;Build Your Own Pizza&nbsp;</td>
+</tr>
+<tr style="height: 63.2px;">
+<td style="width: 172px; height: 63.2px;">
+<p>&nbsp;Choose Your Size</p>
+<p>&nbsp;<input name="Size" type="radio" value="Small" /> Small</p>
+<p>&nbsp;<input name="Size" type="radio" value="Medium" /> Medium</p>
+<p>&nbsp;<input name="Size" type="radio" value="Large" /> Large</p>
+<p>&nbsp;<input name="Size" type="radio" value="X-Large" /> X-Large</p>
+</td>
+<td style="width: 172.8px; height: 63.2px;">
+<p>&nbsp;Choose Your Crust</p>
+<p>&nbsp;<input name="Crust" type="radio" value="Thin" /> Thin</p>
+<p>&nbsp;<input name="Crust" type="radio" value="Classic" /> Classic Oven Roasted</p>
+<p>&nbsp;<input name="Crust" type="radio" value="Thick" /> Thick</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr style="height: 15px;">
+<td style="width: 172px; height: 15px;" colspan="2">Toppings&nbsp;&nbsp;</td>
+</tr>
+<tr style="height: 40px;">
+<td style="width: 172px; height: 40px;">
+<p>&nbsp;<input name="Size" type="radio" value="Pepperoni" />&nbsp;Pepperoni</p>
+<p>&nbsp;<input name="Topping" type="radio" value="Salami" />&nbsp;Salami</p>
+<p>&nbsp;<input name="Topping" type="radio" value="Sausage" />&nbsp;Sausage</p>
+<p>&nbsp;<input name="Topping" type="radio" value="Chicken" />&nbsp;Chicken</p>
+<p>&nbsp;<input name="Topping" type="radio" value="Capicola" />&nbsp;Capicola</p>
+<p>&nbsp;<input name="Topping" type="radio" value="Green Peppers" />&nbsp;Green Peppers</p>
+<p>&nbsp;<input name="Topping" type="radio" value="Onions" />&nbsp;Onions</p>
+<p>&nbsp;<input name="Topping" type="radio" value="Tomatoes" />&nbsp;Tomatoes</p>
+</td>
+<td style="width: 172.8px; height: 40px;">
+<p>&nbsp;<input name="Size" type="radio" value="Pepperoni" />&nbsp;Mushrooms</p>
+<p>&nbsp;<input name="Topping" type="radio" value="Salami" />&nbsp;Green Olives</p>
+<p>&nbsp;<input name="Topping" type="radio" value="Sausage" />&nbsp;Black Olives</p>
+<p>&nbsp;<input name="Topping" type="radio" value="Chicken" />&nbsp;Banana Peppers</p>
+<p>&nbsp;<input name="Topping" type="radio" value="Capicola" />&nbsp;Spinach</p>
+<p>&nbsp;<input name="Topping" type="radio" value="Green Peppers" />&nbsp;Pineapples</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</div>
+
+<div class="footer">
+  <a class="footer_links" href="#About" style="float: left; margin-left: 2%;">About Us</a>
+  <a class="footer_links" href="#Guarantee" style="float: right; margin-right: 2%;">Our Guarantee</a>
+  <div style="text-align: center;"><a class="footer_links" href="#Contact">Contact Us</a></div>
+  <p class="footer_links" style="text-align: center;">Copyright © Antonio's Pizzeria 2018</p>
+</div>
+</body>
+</html>

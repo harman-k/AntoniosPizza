@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.column {
+  float: left;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  margin-bottom: 35px;
+}
+
+img {
+width: 100%;
+height: 300px;
+}
+
+#body {
+   padding:10px;
+   padding-bottom:60px;   /* Height of the footer */
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    background-color: #e17845;
+	border: 1px solid black;
+	float: left;
+}
+
+li a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+	color: white;
+	border: 1px solid black;
+	font-weight:bold;
+	font-size:24px;
+	line-height: 150%;
+}
+
+li a:hover:not(.active) {
+    background-color: #6fa8dc;
+}
+
+input[type=text], select {
+	width: 50%;
+	padding: 2%;
+	margin: 2% 5%;
+	box-sizing: border-box;
+	font-size: 100%;
+	border-style: solid;
+	border-color: grey;
+	border-width: 0.1vh;
+}
+
+label {
+	width: 50%;
+	margin: 0 5%;
+	box-sizing: border-box;
+	font-size: 150%;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+	height: 10%;
+    background-color: #e17845;
+    color: white;
+}
+
+.footer_links {
+	font-weight:bold;
+	font-size:20px;
+}
+</style>
+</head>
+<body>
+<div class="row">
+  <div class="column" style="width: 20%;">
+	<img src="Antonios_logo.PNG" alt="logo">
+  </div>
+  <div class="column" style="width: 80%;">
+	<img src="Cover.jpg" alt="cover">
+  </div>
+</div>
+
+
+<div id="body">
+	<ul>
+	  <li><a href="#Menu">Food Menu <img align= "right" src="menu_icon.png" style="width: 35px; height: 35px"/></a></li>
+	  <li><a href="#Cart">Shopping Cart <img align= "right" src="cart_icon.png" style="width: 35px; height: 35px"/></a></li>
+	  <li><a href="#Profile">Profile <img align= "right" src="profile_icon.jpg" style="width: 35px; height: 35px"/></a></li>
+	  <li><a href="#History">Order History <img align= "right" src="order_history_icon.png" style="width: 35px; height: 35px"/></a></li>
+	  <li><a href="#Logout">Logout <img align= "right" src="logout_icon.png" style="width: 35px; height: 35px"/></a></li>
+	</ul>
+
+	</ul>
+<form action="javascript:addContactHandleIt()" name="myForm">
+<table style="margin-left: auto; margin-right: auto; height: 142px;" width="225">
+<tbody>
+<tr>
+<td style="width: 104.8px;" colspan="2">
+<p style="text-align: center;"><strong> Anthony C. </strong></p>
+<p style="text-align: center;">Large Pepperoni Pizza</p>
+<p style="text-align: center;">Coca Cola</p>
+</td>
+</tr>
+<tr>
+<td style="width: 104.8px;"><br /> <button type="submit" value="Submit">Accept</button></td>
+</tr>
+<tr>
+<td style="width: 104.8px;"><br /> <button type="submit" value="Submit">Decline</button> </td>
+</tr>
+</div>
+
+<div class="footer">
+  <a class="footer_links" href="#About" style="float: left; margin-left: 2%;">About Us</a>
+  <a class="footer_links" href="#Guarantee" style="float: right; margin-right: 2%;">Our Guarantee</a>
+  <div style="text-align: center;"><a class="footer_links" href="#Contact">Contact Us</a></div>
+  <p class="footer_links" style="text-align: center;">Copyright © Antonio's Pizzeria 2018</p>
+</div>
+</body>
+</html>
